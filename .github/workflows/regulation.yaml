@@ -1,0 +1,12 @@
+name: 'Regulation initializer'
+
+on:
+  workflow_dispatch:
+
+jobs:
+  init: # レギュレーション上必須
+    # TODO: cacheを消す処理を入れる
+    # これは初期化処理なので、高速化の必要はありません
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "initialized!"
